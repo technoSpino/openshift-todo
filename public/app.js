@@ -1,6 +1,6 @@
 //<debug>
 Ext.Loader.setPath({
-    'Ext': 'touch/src',
+    'Ext': 'public/touch/src',
     'ToDo': 'app'
 });
 //</debug>
