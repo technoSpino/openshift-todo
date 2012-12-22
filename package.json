@@ -1,7 +1,7 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "ToDo App - LUPD",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "A ToDo App, intended for submission in Sencha's HTML5 is Ready Competition",
   "keywords": [
     "OpenShift",
     "Node.js",
@@ -25,7 +25,8 @@
   },
 
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "fs": "*"
   },
   "devDependencies": {},
   "bundleDependencies": [],
