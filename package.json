@@ -1,5 +1,5 @@
 {
-  "name": "ToDo App - LUPD",
+  "name": "ToDo App LUPD",
   "version": "1.0.0",
   "description": "A ToDo App, intended for submission in Sencha's HTML5 is Ready Competition",
   "keywords": [
@@ -25,7 +25,8 @@
   },
 
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "fs": "*"
   },
   "devDependencies": {},
   "bundleDependencies": [],
