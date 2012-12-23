@@ -12,7 +12,11 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main', 'TaskList'],
+
+    stores: ['TaskList'],
+
+    models: ['TaskList'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
