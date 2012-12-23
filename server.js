@@ -119,7 +119,7 @@ var SampleApp = function() {
                      '  <body>\n<br/>\n' + content + '</body>\n</html>');
         };
 
-        self.routes['/'] = function(req, res) {
+        self.routes['/public'] = function(req, res) {
             res.set('Content-Type', 'text/html');
             res.send(fs.readFileSync('./public/index.html'));
         };
@@ -133,7 +133,7 @@ var SampleApp = function() {
     self.initializeServer = function() {
         self.createRoutes();
         self.app = express();
-
+        self.app.use('/',express.static(__dirname + '/public'));
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
