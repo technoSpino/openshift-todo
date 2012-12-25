@@ -3,6 +3,10 @@ Ext.define('ToDo.model.TaskList', {
     config: {
         fields: [
         	{name: 'listName', type: 'string'}
-        	]
+        	],
+        	 associations: [
+            {type: 'hasMany', model: 'TaskItem',    name: 'items'},
+        
+        ]
     }
 });
