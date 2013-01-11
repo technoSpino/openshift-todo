@@ -3,13 +3,21 @@ Ext.define("ToDo.store.TaskList", {
     alias: 'store.TaskList',
     config: {
         model: 'ToDo.model.TaskList',
-        sorters: 'name',
-        data: [
-            {name: "Homework"},
-            {name: "Groceries"},
-            {name: "Housework"},
-            {name: "Movies"},
-            {name: "Bucket List"}
-        ]
+        sorters: 'listName',
+        autoLoad:true
+        // data: [
+        //     {
+        //         listName: "Homework",
+        //         taskItems:[{
+        //             id:1,
+        //             title:'Chemistry', 
+        //             description:'Chapter 1 Questions'
+        //         }]
+        //     },
+        //     {listName: "Groceries"},
+        //     {listName: "Housework"},
+        //     {listName: "Movies"},
+        //     {listName: "Bucket List"}
+        // ]
     }
 });

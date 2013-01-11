@@ -4,19 +4,16 @@ Ext.Loader.setPath({
     'ToDo': 'app'
 });
 //</debug>
-
 Ext.application({
     name: 'ToDo',
 
-    requires: [
-        'Ext.MessageBox'
-    ],
+    requires: ['Ext.MessageBox'],
 
     views: ['Main', 'TaskList'],
 
     stores: ['TaskList'],
 
-    models: ['TaskList'],
+    models: ['TaskList','TaskItem'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -45,14 +42,10 @@ Ext.application({
     },
 
     onUpdated: function() {
-        Ext.Msg.confirm(
-            "Application Update",
-            "This application has just successfully been updated to the latest version. Reload now?",
-            function(buttonId) {
-                if (buttonId === 'yes') {
-                    window.location.reload();
-                }
+        Ext.Msg.confirm("Application Update", "This application has just successfully been updated to the latest version. Reload now?", function(buttonId) {
+            if(buttonId === 'yes') {
+                window.location.reload();
             }
-        );
+        });
     }
 });
