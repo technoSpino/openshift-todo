@@ -9,11 +9,11 @@ Ext.application({
 
     requires: ['Ext.MessageBox'],
 
-    views: ['Main', 'TaskList'],
+    controllers:['ProjectController'],
 
-    stores: ['TaskList'],
+    views: ['Main'],
 
-    models: ['TaskList','TaskItem'],
+    stores: ['Projects'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
